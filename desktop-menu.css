@@ -1,0 +1,160 @@
+button {
+  color: inherit;
+  font-size: inherit;
+}
+
+.desktop__nav__menu {
+  max-width: 1152px;
+  margin: 10px auto;
+  position: relative;
+  font-family: Roboto, sans-serif;
+}
+
+
+
+.desktop__nav__menu .nav__menu__container {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.1px;
+}
+
+.desktop__nav__menu .nav__menu__item {
+  background: var(--white-secondary);
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.desktop__nav__menu .nav__menu__item:hover > button,
+.desktop__nav__menu .nav__menu__item:hover > a {
+  color: red;
+}
+
+.desktop__nav__menu .nav__menu__item  i,
+.desktop__nav__menu .nav__menu__item span {
+  display: block;
+  font-style: normal;
+  font-family: Roboto, sans-serif;
+}
+
+
+.desktop__nav__menu .nav__button {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: grid block;
+  grid-template-columns: 1fr 30px;
+  border-radius: 0%;
+  background-color: transparent;
+  padding: 12px;
+  border: 0.1px solid var(--gray-secondary);
+  text-align: center;
+}
+.desktop__nav__menu .menu__button_inicio {
+  height: 100%;
+  width: 100%;
+  border-radius: 0%;
+  border: 0.1px solid var(--gray-secondary);
+  background-color: transparent;
+}
+
+
+.desktop__nav__menu .nav__menu__item .nav__button:hover {
+  background: var(--white);
+}
+.desktop__nav__menu .nav__menu__item  .nav__button i {
+  font-size: 1.6rem;
+  transition: 0.2s;
+  transform: rotateZ(90deg) scaleY(1.5);
+}
+
+
+.desktop__nav__menu .menu__body {
+  display: none; /*Modificar con js*/
+  position: absolute;
+  top: 59px;
+  left: 0px;
+  height: auto;
+  z-index: -1;
+  border: solid var(--gray-secondary) 1px;
+  width: 1152px;
+  padding: 36px;
+  border-top: none;
+}
+
+.desktop__nav__menu .menu__body.active {
+  display: block;
+}
+
+.desktop__nav__menu .menu__body.active + .nav__button {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.desktop__nav__menu .menu__body.active + .nav__button:focus  {
+  outline: 3px solid var(--yellow);
+}
+.desktop__nav__menu .menu__body.active + .nav__button i {
+  transition: 0.3s;
+  transform: rotateZ(0deg) scaleY(1.5);
+}
+
+
+.desktop__nav__menu .menu__body  .menu__body__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+}
+
+.desktop__nav__menu .menu__body .menu__item {
+  list-style: none;
+  padding: 16px 16px;
+}
+.desktop__nav__menu .menu__body h2,
+.desktop__nav__menu .menu__body h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.desktop__nav__menu .menu__body .menu__item a{
+  color: var(--blue);
+}
+
+.desktop__nav__menu .menu__body  .hr_36px {
+  margin: 36px 0;
+  border-top: 0.1px;
+  color: var(--gray-secondary);
+}
+
+.desktop__nav__menu .menu__body h2 + .hr_36px  {
+  width: 90%;
+}
+.desktop__nav__menu .menu__body  .hr_16px {
+  margin: 16px 0;
+  border-top: 0.1px;
+  color: var(--gray-secondary);
+  width: 90%;
+}
+
+.desktop__nav__menu .menu__body .menu__button {
+  padding: 16px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1.1rem;
+  background: transparent;
+  border-radius: 6px;
+  border: 1.6px var(--blue) solid;
+  min-width: 40%;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.desktop__nav__menu .menu__body .menu__button:hover,
+.desktop__nav__menu .menu__body .menu__item:hover a {
+  color: var(--black);
+  text-decoration: underline 4px;
+}
+

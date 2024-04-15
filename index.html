@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./movile-menu.css">
+  <link rel="stylesheet" href="./desktop-menu.css">
+  <title>Menu - Menu indentado - Sub menu indentado</title>
+</head>
+<body>
+  <nav class ="movile__nav__menu">
+    <div class="menu__title"><a>Menú</a><i class="fi fi-rr-menu-burger"></i></div>
+    <ul class="menu__body">
+        <!-- LISTA DE MENU PRINCIPAL -->
+        <div class="menu__list prime__menu__list active">
+          <li class = "list__item"><a href="./index.html"><span>Inicio</span></a></li>
+          <li class = "list__item"><span>Categorias</span><i>&gt;  </i></li>
+          <li class = "list__item"><span>Trámites y servicios</span><i>&gt;  </i></li>
+          <li class = "list__item"><span>Normas y documentos</span><i>&gt;  </i></li>
+          <li class = "list__item"><span>Noticias</span><i>&gt;</i></li>
+          <li class = "list__item"><span>Información institucional</span><i>&gt;  </i> </li>
+          <li class = "list__item"><span>Contacto</span><i>&gt;</i></li>
+        </div>
+
+        <!-- CATEGORIAS nesting_menu-->
+        <div class="menu__list nesting__menu__list">
+          <li class="title__list__item turn_back_menu"><i>&lt;</i><span>Categorías</span></li>
+          <li class="list__item"><a href="#">Todas las categorías</a></li>
+          <li class="list__item"><a href="#">Documentos certificados</a></li>
+          <li class="list__item"><a href="#">Identidad</a></li>
+          <li class="list__item"><a href="#">Registro civil</a></li>
+          <li class="list__item"><a href="#">Transparencia</a></li>
+          <li class="list__item"><a href="#">Contacto con Reniec</a></li>
+        </div>
+
+        <!-- TRÁMITES Y SERVICIOS nesting_menu-->
+        <div class="menu__list nesting__menu__list">
+          <li class="title__list__item turn_back_menu"><i>&lt;</i><span>Trámites y servicios</span></li>
+          <li class="list__item"><a href="#">Todos los trámites y servicios</a></li>
+          <li class="list__item"><a href="#">Enlaces directos</a></li>
+          <li class="list__item"><a href="#">Denuncia de actos de corrupción de esta entidad</a></li>
+          <li class="list__item"><a href="#">Mesa de partes</a></li>
+          <li class="list__item"><a href="#">Seguimiento de trámites</a></li>
+          <li class="list__item"><a href="#">Libro de reclamaciones</a></li>
+          <li class="list__item"><a href="#">Texto Único de Procedimientos Administrativos (TUPA)</a></li>
+          <li class="list__item"><a href="#">Acceso a la información pública</a></li>
+          <li class="list__item"><a href="#">Trabaja con nosotros</a></li>
+          <li class="list__item"><a href="#">Contenido más visto</a></li>
+          <li class="list__item"><a href="#">Consultar el estado de tu trámite para la entrega de tu DNI</a></li>
+          <li class="list__item"><a href="#">Solicitar Certificado de inscripción (C4)</a></li>
+          <li class="list__item"><a href="#">Solicitar copia Certificada de Acta o Partida en Reniec</a></li>
+          <li class="list__item"><a href="#">Renovar DNI Azul o DNIe para mayores de 17 Años</a></li>
+          <li class="list__item"><a href="#">Consultar Información de transparencia</a></li>
+          <li class="list__item"><a href="#">Solicitar acceso al servicio de verificación de identidad de personas en Reniec</a></li>
+        </div>
+
+        <!-- NORMAS Y DOCUMENTOS nesting_menu-->
+        <div class="menu__list nesting__menu__list">
+          <li class="title__list__item turn_back_menu"><i>&lt;</i><span>Normas y documentos</span></li>
+          <li class="list__item"><a href="#">Todas las normas y documentos</a></li>
+          <li class="list__item"><a href="#">Normas y documentos legales</a></li>
+          <li class="list__item"><a href="#">Todos los compendios de normas y documentos legales</a></li>
+          <li class="list__item for__sub__nesting__list__item">Tipo de normas<i>&gt;</i></li>
+          <li class="list__item"><a href="#">Todos lis informes y publicaciones</a></li>
+          <li class="list__item"><a href="#">Todos los compendios de informes y publicaciones</a></li>
+          <li class="list__item for__sub__nesting__list__item">Tipo de Informes<i>&gt;</i></li>
+        </div>
+
+        <!-- NOTICIAS Y CAMPAÑAS nesting_menu-->
+        <div class="menu__list nesting__menu__list">
+          <li class="title__list__item turn_back_menu"><i>&lt;</i><span>Noticias y campañas</span></li>
+          <li class="list__item"><a href="#">Noticias</a></li>
+          <li class="list__item"><a href="#">Campañas</a></li>
+        </div>
+
+        <!-- INFORMACIÓN INSTITUCIONAL nesting_menu-->
+        <div class="menu__list nesting__menu__list">
+          <li class="title__list__item turn_back_menu"><i>&lt;</i><span>Información Institucional</span></li>
+          <li class="list__item"><a href="#">Toda la información institucional</a></li>
+          <li class="list__item"><a href="#">¿Qué hacemos?</a></li>
+          <li class="list__item"><a href="#">Organización</a></li>
+          <li class="list__item"><a href="#">Directorio de funcionarios</a></li>
+          <li class="list__item"><a href="#">Agenda Institucional</a></li>
+          <li class="list__item"><a href="#">Portal de transparencia Estándar</a></li>
+          <li class="list__item"><a href="#">Convocatoria del estado</a></li>
+          <li class="list__item for__sub__nesting__list__item">Documento de Gestión <i>&gt;</i></li>
+        </div>
+
+        <!-- CONTACTO nesting_menu-->
+        <div class="menu__list nesting__menu__list">
+          <li class="title__list__item turn_back_menu"><i>&lt;</i><span>Contacto</span></li>
+          <li class="list__item"><a href="#">Toda la información del contacto</a></li>
+          <li class="list__item"><a href="#">Directorio de funcionarios</a></li>
+          <li class="list__item"><a href="#">Sedes</a></li>
+          <li class="list__item"><a href="#">Libro de reclamaciones</a></li>
+          <li class="list__item"><a href="#">Denunciar actos de corrupción</a></li>
+          <li class="list__item"><a href="#">Acceso a la información pública</a></li>
+        </div>
+        
+        <!-- SUB__NESTINGS__MENU XD -->
+        <!-- Tipo de Normas sub_nesting_menu -->
+        <div class ="menu__list sub__nesting__menu__list">
+          <li class="title__list__item turn__back__sub__menu"><i>&lt;</i><span>Tipo de norma</span></li>
+          <li class="list__item"><a href="#">Convenio</a></li>
+          <li class="list__item"><a href="#">Directiva</a></li>
+          <li class="list__item"><a href="#">Ley</a></li>
+          <li class="list__item"><a href="#">Resolución</a></li>
+          <li class="list__item"><a href="#">Ver todos los tipos de normas</a></li>
+        </div>
+
+      <!-- Tipo de Informes sub_nesting_menu -->
+        <div class ="menu__list sub__nesting__menu__list">
+          <li class="title__list__item turn__back__sub__menu"><i>&lt;</i><span>Tipo de Informes</span></li>
+          <li class="list__item"><a href="#">Acta</a></li>
+          <li class="list__item"><a href="#">Archivo</a></li>
+          <li class="list__item"><a href="#">Artículo</a></li>
+          <li class="list__item"><a href="#">Aviso de sinceramiento</a></li>
+          <li class="list__item"><a href="#">Ver todos los tipos de informes</a></li>
+        </div>
+
+        <!-- Documentos de gestión sub_nesting_menu -->
+        <div class = "menu__list sub__nesting__menu__list">
+          <li class="title__list__item turn__back__sub__menu"><i>&lt;</i><span>Documentos de gestión</span></li>
+          <li class="list__item"><a href="#">Texto único de procesos Administrativos (TUPA)</a></li>
+          <li class="list__item"><a href="#">Norma de creación</a></li>
+          <li class="list__item"><a href="#">Ver todos los documentos de gestión</a></li>
+        </div>
+              
+        
+    </ul>
+  </nav>
+  <nav class ="desktop__nav__menu">
+    <!-- LISTA DE MENU PRINCIPAL -->
+    <ul class="nav__menu__container">
+      <li class = "nav__menu__item"><button class ="menu__button_inicio"><a href="./index.html"><span>Inicio</span></a></button></li>
+      <li class = "nav__menu__item">
+        <!-- menu vista 1 -->
+        <ul class="menu__body">
+          <div class="menu__body__container">
+            <div class="menu__section">
+              <li class="menu__item"><a href="">Documentos certificados</a></li>
+              <li class="menu__item"><a href="">Transparencia</a></li>
+            </div>
+            <div class="menu__section">
+              <li class="menu__item"><a href="">Identidad</a></li>
+              <li class="menu__item"><a href="">Contacto con Reniec</a></li>
+            </div>
+            <div class="menu__section">
+              <li class="menu__item"><a href="">Registro civil</a></li>
+            </div>
+          </div>
+          <hr class="hr_36px">
+          <button class ="menu__button">Todas las categorías &gt;</button>
+        </ul>
+        <!-- menu boton 1 -->
+        <button class="nav__button"><span>Categorias</span><i>&gt;</i></button>
+      </li>
+      <li class = "nav__menu__item">
+        <ul class="menu__body">
+          <div class="menu__body__container">
+            <div class="menu__section">
+              <h2>Enlaces directos</h2>
+              <hr class="hr_16px">
+              <div class="menu__body__container">
+                <div class="menu__section">
+                  <li class="menu__item"><a href="">Denuncia de actos de corrupción de funcionarios de esta entidad</a></li>
+                  <li class="menu__item"><a href="">Seguimiento de trámites</a></li>
+                  <li class="menu__item"><a href="">Texto único de Procedimientos Administrativos (TUPA)</a></li>
+                  <li class="menu__item"><a href="">Trabaja con nosotros</a></li>
+                </div>
+                <div class="menu__section">
+                  <li class="menu__item"><a href="">Mesa de partes</a></li>
+                  <li class="menu__item"><a href="">Libro de reclamaciones</a></li>
+                  <li class="menu__item"><a href="">Acceso a la información pública</a></li>
+                </div>
+              </div>
+            </div>
+            <div class="menu__section">
+              <h2>Contenido más visto</h2>
+              <hr class="hr_16px">
+              <div class="menu__section">
+                <li class="menu__item"><a href="">Consulatr estado de tu trámite para la entrega de tu DNI</a></li>
+                <li class="menu__item"><a href="">Solicitar certificado de inscripción (C4)</a></li>
+                <li class="menu__item"><a href="">Solicitar Copia de Partida o Acta de Partida en Reniec</a></li>
+                <li class="menu__item"><a href="">Renovar DNI azul o DNIe para mayores de 17 años</a></li>
+                <li class="menu__item"><a href="">Solicitar acceso al servicio de verificación de identidad de personas en Reniec</a></li>
+                <li class="menu__item"><a href="">Renovar DNI para menores de edad</a></li>
+              </div>
+            </div>
+          </div>
+          <hr class="hr_36px">
+          <button class="menu__button">Trámites y Servicios &gt;</button>
+        </ul>
+        <button class="nav__button"><span>Trámites y<br > servicios</span><i>&gt;</i></button>
+      </li>
+      <li class = "nav__menu__item">
+        <ul class="menu__body">
+          <div class="menu__body__container">
+            <div class="menu__section">
+              <h2>Normas y documentos legales</h2>
+              <hr class = "hr_36px">
+              <div class="menu__body__container">
+                <div class="menu__section">
+                  <li class="menu__item"><a href="">Todas las normas y documentoslegales</a></li>
+                  <li class="menu__item"><a href="">Todos los compendios de normas y documentos legales</a></li>
+                </div>
+                <div class="menu__section">
+                  <h3>Tipo de normas</h3>
+                  <li class="menu__item"><a href="">Convenio</a></li>
+                  <li class="menu__item"><a href="">Directiva</a></li>
+                  <li class="menu__item"><a href="">Ley</a></li>
+                  <li class="menu__item"><a href="">Resolución</a></li>
+                  <li class="menu__item"><a href="">Ver todos los tipos de normas</a></li>
+                </div>
+              </div>
+            </div>
+            <div class="menu__section">
+              <h2>Informes y publicaciones</h2>
+              <hr class = "hr_36px">
+              <div class="menu__body__container">
+                <div class="menu__section">
+                  <li class="menu__item"><a href="">Todos los informes y publicaciones</a></li>
+                  <li class="menu__item"><a href="">Todos los compedios de informes y publicaciones</a></li>
+                </div>
+                <div class="menu__section">
+                  <h3>Tipos de informes</h3>
+                  <li class="menu__item"><a href="">Acta</a></li>
+                  <li class="menu__item"><a href="">Archivo</a></li>
+                  <li class="menu__item"><a href="">Artículo</a></li>
+                  <li class="menu__item"><a href="">Aviso de sinceramiento</a></li>
+                  <li class="menu__item"><a href="">Ver todos los tipos de informes</a></li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="hr_36px">
+          <button class="menu__button">Todas las normas y documentos &gt;</button>
+        </ul>
+        <button class="nav__button"><span>Normas y<br > documentos</span><i>&gt;</i></button>
+      </li>
+      <li class = "nav__menu__item">
+        <ul class="menu__body">
+          <div class="menu__body__container">
+            <div class="menu__section">
+              <h2>Noticias</h2>
+              <li class="menu__item"><a href="">Todas las noticias &gt;</a></li>
+            </div>
+            <div class="menu__section">
+              <h2>Campañas</h2>
+              <li class="menu__item"><a href="">Todas las campañas y eventos &gt;</a></li>
+            </div>
+          </div>
+        </ul>
+        <button class="nav__button"><span>Noticias y<br> campañas</span><i>&gt;</i></button>
+      </li>
+      <li class = "nav__menu__item">
+        <ul class="menu__body">
+          <div class="menu__body__container">
+            <div class="menu__section">
+              <li class="menu__item"><a href="">¿Qué hacemos?</a></li>
+              <li class="menu__item"><a href="">Organización</a></li>
+              <li class="menu__item"><a href="">Directorio de funcionarios</a></li>
+              <li class="menu__item"><a href="">Agenda institucional</a></li>
+              <li class="menu__item"><a href="">Portal de Transparencia Estándar</a></li>
+              <li class="menu__item"><a href="">Convocatorias del Estado</a></li>
+            </div>
+            <div class="menu__section">
+              <h2>Documentos de gestión</h2>
+              <li class="menu__item"><a href="">Texto único de procedimientos administrativos (TUPA)</a></li>
+              <li class="menu__item"><a href="">Norma de creación</a></li>
+              <li class="menu__item"><a href="">Todos los documentos de gestión</a></li>
+            </div>
+            <div class="menu__section">
+              <h2>Secciones Relacionadas</h2>
+              <li class="menu__item">Noticias</li>
+              <li class="menu__item"><a href="">Informes y publicaciones</a></li>
+              <li class="menu__item"><a href="">Normas y documentos legales</a></li>
+              <li class="menu__item"><a href="">Campañas y eventos</a></li>
+            </div>
+          </div>
+          <hr class="hr_36px">
+          <button class="menu__button">Toda la información institucional &gt;</button>
+        </ul>
+        <button class="nav__button"><span>Información<br > institucional</span><i>&gt;</i></button>
+      </li>
+      <li class = "nav__menu__item">
+        <ul class="menu__body">
+          <div class="menu__body__container">
+            <div class="menu__section">
+              <li class="menu__item"><a href="">Directorio de funcionarios</a></li>
+              <li class="menu__item"><a href="">Denunciar actos de corrupción</a></li>
+            </div>
+            <div class="menu__section">
+              <li class="menu__item"><a href="">Sedes</a></li>
+              <li class="menu__item"><a href="">Acceso a la información pública</a></li>
+            </div>
+            <div class="menu__section">
+              <li class="menu__item"><a href="">Libro de reclamaciones</a></li>
+            </div>
+          </div>
+          <hr class="hr_36px">
+          <button class="menu__button">Toda la información del contacto &gt;</button>
+        </ul>
+        <button class="nav__button"><span>Contacto</span><i>&gt;</i></button>
+      </li>
+    </ul>
+  </nav>
+  <script src="index.js"></script>
+</body>
+</html>
