@@ -1,0 +1,41 @@
+.more-points h3 {
+    font-size: 22px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.slider-5-container .slider {
+    margin: 0 20px;
+    max-width: 270px;
+    height: 300px;
+    border-radius: 30px;
+    border: 0.5px solid rgba(128, 128, 128, 0.5);
+    box-shadow: rgba(0, 51, 102, 0.05) 0px 1px 1px, rgba(0, 51, 102, 0.1) 0px 3px 6px -1.5px;
+    overflow: hidden;
+}
+
+.slider-5-container .slider h4 {
+    margin: 15px  20px 0 20px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.slider-5-container .slider p {
+    margin: 10px 20px 0 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.slider-5-container .slider .img-container {
+    max-width: 270px;
+    height: 145px;
+}
+
+.slider-5-container .slider:nth-child(1) .img-container {
+    background-image: url("https://portal.andina.pe/EDPfotografia3/Thumbnail/2021/09/29/000811968W.jpg");
+}
+
+.slider-5-container .slider:nth-child(2) .img-container {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/963/101/non_2x/set-of-variety-payment-methods-icon-free-vector.jpg");
+}
