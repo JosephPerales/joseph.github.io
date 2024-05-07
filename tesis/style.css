@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: rgb(232, 255, 127);
+    font-size: 2.1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main-container {
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8em;
+    background-color: black;
+    padding: 30px 20px;
+    width: max-content;
+    border: 1px solid gray
+}
+
+.main-container p {
+    padding: 0 15px;
+    border: 1px solid red;
+    border-radius: 1.8em;
+    background-color: rgba(94, 77, 77, 0.2) ;
+    cursor: pointer
+}
+
+.main-container p {
+    color: rgb(17, 169, 98);
+}
+
+.main-container .for_section {
+    width: max-content;
+}
+
+.main-container .for_section a {
+    color: azure;
+    text-decoration: none;
+    border: 0.5px solid rgb(18, 218, 201);
+    padding: 0 5px;
+}
+

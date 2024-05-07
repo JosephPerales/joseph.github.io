@@ -1,0 +1,77 @@
+/* Estilos para el contenedor del slider */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  overflow-x: hidden;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 0;
+    width: 100%;
+    background-color: aqua;
+  }
+.slider-container::-webkit-scrollbar {
+  width: 0;
+}
+  
+   /* Estilos para los elementos del slider */
+.slider {
+  overflow-x: hidden;
+  transition: transform 0.5s ease;
+  min-width: 50%;
+  height: 200px;
+  background: rgb(33, 3, 12);
+  /* border: 1px solid black; */
+}
+  
+.slider-item {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+  line-height: 200px;
+  text-align: center;
+}
+   /* Estilos para los controles de navegación */
+.slider-controls {
+  text-align: center;
+  margin-top: 10px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 130px;
+}
+  
+.slider-control {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  background: green;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  padding-top: 1.9px;
+}
+
+.slider-control.prev {
+  padding-right: 2px;
+}
+
+.slider-control.next {
+  padding-left: 2px;
+}
+
+.slider .slider-item {
+  background-size: cover;
+  background-position: center;
+}

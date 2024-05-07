@@ -1,0 +1,130 @@
+:root {
+  --slide-transform: 0;
+  --transition: transform 1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos para el contenedor del slider */
+.slider-container {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.slider {
+  transform: translateX(var(--slide-transform));
+  transition: var(--transition);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  width: 100%;
+  background-color: aqua;
+  position: relative;
+}
+.slider::-webkit-scrollbar {
+  width: 0;
+}
+  
+   /* Estilos para los elementos del slider */
+.slide {
+  overflow-x: hidden;
+  min-width: 100%;
+  height: 380px;
+  background: rgb(33, 3, 12);
+  /* border: 1px solid black; */
+}
+  
+.slide-item {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+  line-height: 380px;
+  text-align: center;
+}
+
+
+/*slide*/
+.slide .slide-item {
+  background-size: cover;
+  background-position: center;
+}
+
+
+ /* Estilos para los controles de navegación */
+.slider-controls {
+  text-align: center;
+  margin-top: 185px;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+}
+
+.slider-control {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  background: rgb(186, 186, 186);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  padding-top: 1.9px;
+}
+
+.slider-control.prev {
+  padding-right: 2px;
+  z-index: 1;
+}
+
+.slider-control.next {
+  padding-left: 2px;
+  z-index: 1;
+}
+
+.slider-control.next:hover,
+.slider-control.prev:hover {
+  opacity: 80%;
+  background-color: green;
+}
+
+.slider-control.next:active,
+.slider-control.prev:active {
+  background-color: green;
+}
+
+/*Puntos del slider*/
+.slider-puntos {
+  width: 100%;
+  padding: .30rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-puntos .punto {
+  width: 1rem;
+  height: 1rem;
+  background: rgb(229, 229, 229);
+  margin: 0.5rem;
+  list-style: none;
+  border-radius: 50%;
+}
+
+.slider-puntos .punto.activo {
+  background: green;
+  /* box-shadow: 0 0 10px 5px green; */
+  width: 1.8rem;
+  transform: scale(1.1);
+  transition: transform 1s;
+  border-radius: 100%;
+}

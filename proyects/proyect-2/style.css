@@ -1,0 +1,116 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    padding: 0;
+    margin:0;
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero{
+    display: grid;
+    grid-template-columns: minmax(200px, 2fr) 3fr;
+    grid-auto-rows: 550px;
+    border-bottom: 2px solid whitesmoke;
+}
+.hero .hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.hero-info{
+    align-self: center;
+    padding-left: 30px;
+}
+.hero-info .hero-info-title{
+    font-size: 4rem;
+    color:rgb(36, 35, 35);
+    font-weight: bold;
+}
+.hero-info .hero-info-description{
+    font-size: 2rem; 
+    color:rgb(36, 35, 35);
+    font-weight: 2;
+}
+.hero-info .hero-info-button{
+    background-color: orangered;
+    color: rgb(10, 5, 5);
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow:rgb(156, 44, 44) 2px 2px 12px;
+}
+.dishes{
+    margin-top: 50px;
+}
+.dishes-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(36, 35, 35);
+    text-align: center;
+}
+.dishes-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 200px));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+.dishes-item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-self: center;
+}
+.dishes-item__big{
+    grid-area: 1 / 1 / 3 / 3;
+}
+.menu{
+    margin-top: 60px;
+    
+}
+.menu .menu-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(36, 35, 35);
+    text-align: center;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  150px);
+    grid-auto-rows: 1fr;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.menu-grid-item{
+    background-color:rgba(252, 215, 215, 0.452);
+    padding: 15px;
+    border-top-left-radius: 50px;
+}
+.menu-grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+    .hero{
+        grid-template-columns: minmax(300px, 500px);
+        justify-content: center;
+    }
+    .hero-image{
+        display: none;
+    }
+    .dishes-grid{
+        grid-template-columns: repeat(auto-fit, minmax(75px, 120px))
+    }
+    .menu-grid{
+        padding: 0px;
+        gap: 9px;
+    }
+}

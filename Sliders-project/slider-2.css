@@ -1,0 +1,60 @@
+.categories {
+    background: rgb(239, 239, 239);
+    padding-bottom: 40px;
+}
+.categories h3 {
+    font-size: 22px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+.categories p {
+    font-size: 18px;
+    width: 300px;
+    margin: 20px;
+}
+
+.slider-2-container .slider {
+    display: flex;
+    width: 300px;
+    border-radius: 30px ;
+    overflow: hidden;
+    background: white;
+    margin: 0 30px;
+    border: 0.5px solid rgba(130, 130, 130, 0.5);
+}
+
+.slider-2-container .slider .img-container {
+    width: 90px;
+    height: 160px;
+}
+
+.slider-2-container .slider:nth-child(1) .img-container {
+    background-image: url("https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot1709/vadymvdrobot170904836/87050071-imagen-vertical-de-chica-feliz-de-jengibre-con-idea-y-mirando-a-la-c%C3%A1mara-sobre-fondo-blanco.jpg");
+}
+.slider-2-container .slider:nth-child(2) .img-container{
+    background-image: url("https://img.freepik.com/foto-gratis/tiro-vertical-mujer-moda-feliz-viste-chaqueta-cuero-negro-bufanda-calida-alrededor-cuello-sonrie-alegremente-tiene-expresion-alegre-aislada-sobre-fondo-rosa-concepto-ropa-moda-personas_273609-57214.jpg?w=2000");
+}
+
+.slider-2-container .slider:nth-child(3) .img-container {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu0ua_dBDkPJnvD7LRsesTZ0WPi-y8dXBqsH1fMm6og1Ftw359X_cxi-JH_7smK3koskw&usqp=CAU");
+}
+.slider-2-container .slider:nth-child(4) .img-container {
+    background-image: url("https://fotografiaesencial.com/blog/wp-content/uploads//2010/05/Retrato-1_bfb982fea66459af67ad23f85f91b8c8.jpg");
+}
+
+
+.slider-2-container .slider div{
+    padding: 30px 50px 0px 15px;
+}
+.slider-2-container .slider h4 {
+    color: rgb(136, 111, 11);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.slider-2-container .slider p {
+    font-size: 16px;
+    margin: 0;
+    width: 170px;
+    line-height: 24px;
+}

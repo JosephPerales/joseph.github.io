@@ -1,0 +1,176 @@
+.benefits h3 {
+    margin: 20px;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.benefits p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+/*warnings*/
+.benefits .warning-1 {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(93, 93, 93);
+}
+
+.benefits .warning-2 {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.benefits .warning-2 p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    background: #efefef;
+    border-radius: 20px;
+    margin: 0 20px;
+    max-width: fit-content;
+}
+
+.benefits .warning-2 span {
+    font-size: 16px;
+}
+
+.benefits .warning-2 i {
+    font-size: 24px;
+}
+
+
+
+/*Slider 4*/
+.slider-4-container .slider {
+    position: relative;
+    height: 530px;
+    width: 270px;
+    margin: 50px 20px 0 20px;
+    border-radius: 30px;
+    border: 0.5px solid rgba(128, 128, 128, 0.5);
+    box-shadow: rgba(0, 51, 102, 0.05) 0px 1px 1px, rgba(0, 51, 102, 0.1) 0px 3px 6px -1.5px;
+
+}
+
+.slider-4-container .slider .plan-title {
+    height: 64px;
+    width: fit-content;
+    padding: 10px 24px;
+    font-size: 32px;
+    background: white;
+    border-radius: 20px;
+    border: 0.5px solid rgba(128, 128, 128, 0.5);
+    margin: 0 auto;
+    transform: translateY(-32px);
+    z-index: 1;
+}
+
+.slider-4-container .slider:nth-child(1),
+.slider-4-container .slider:nth-child(1) ul li i  {
+    color: rgb(236, 31, 96);
+}
+
+.slider-4-container .slider:nth-child(2),
+.slider-4-container .slider:nth-child(2) ul li i {
+    color: rgb(93, 93, 93);
+}
+
+.slider-4-container .slider:nth-child(3),
+.slider-4-container .slider:nth-child(3) ul li i  {
+    color: black;
+}
+
+.slider-4-container .slider header {
+    border-radius: 30px 30px 0 0;
+}
+.slider-4-container .slider:nth-child(1) header {
+    background: rgba(236, 31, 96, 0.08);
+
+}
+
+.slider-4-container .slider:nth-child(2) header {
+    background: #f4f7f9;
+}
+
+.slider-4-container .slider:nth-child(3) header {
+    background: #e2e9ee;
+}
+
+.slider-4-container .slider header p {
+    text-align: center;
+    margin: 5px;
+}
+
+.slider-4-container .slider header p:nth-child(2) {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -12px;
+}
+.slider-4-container .slider header p:nth-child(3) {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.slider-4-container .slider header p:nth-child(4) {
+    font-size: 14px;
+    margin: 5px 20px;
+    padding-bottom: 10px;
+}
+
+.slider-4-container .slider header p:nth-child(3) span {
+    color: rgb(93, 93, 93);
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.slider-4-container .slider ul {
+    padding: 20px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.slider-4-container .slider ul li {
+    margin: 15px 0;
+    display: flex;
+}
+
+
+.slider-4-container .slider ul li i{
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.slider-4-container .slider ul span {
+    color: rgb(44, 44, 44);
+}
+
+.slider-4-container .slider ul span small {
+    font-size: 12px;
+    color: rgb(77, 77, 77);
+}
+
+.slider-4-container .slider ul li.call-to-action {
+    margin: 30px 0;
+}
+.slider-4-container .slider ul li.call-to-action a {
+    color: rgb(105, 104, 104);
+}
+
+.slider-4-container .slider button {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    height: 48px;
+    border-radius: 30px;
+    background-color: rgb(13, 128, 13);
+    border: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 30px;
+}

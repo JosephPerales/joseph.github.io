@@ -1,0 +1,44 @@
+:root {
+    --slide-transform: 0;
+    --transition: transform 1s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    display: flex;
+    transform: translateX(var(--slide-transform));
+    transition: var(--transition);
+}
+
+.slider__container {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000;
+}
+
+.slider__element {
+    min-width: 100%;
+    height: 300px;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 300px;
+}
+
+.slider__element.red {
+    background-color: rgb(237, 119, 119);
+}
+.slider__element.green{
+    background-color: rgb(97, 205, 112);
+}
+.slider__element.blue {
+    background-color: rgb(97, 205, 205);
+}
+.slider__element.brown{
+    background-color: rgb(161, 47, 70);
+}
